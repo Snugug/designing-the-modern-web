@@ -1,0 +1,247 @@
+// @import "reveal";
+@import 'style-guide';
+
+body {
+  .wf-inactive & {
+    font-family: "P22Underground-Thin";
+  }
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.the-web .state-background {
+  background: #f3f1da;
+}
+
+.experiment {
+  $bkg: nth($primary, 3);
+  .state-background {
+    background: $bkg;
+  }
+  img {
+    border: .5em solid complement($bkg);
+  }
+  #box-model img {
+    border: none;
+  }
+}
+
+strong,
+h1, h2, h3, h4, h5, h6 {
+  .wf-inactive & {
+    font-family: "P22Underground-Light";
+  }
+  font-weight: 300;
+}
+
+blockquote {
+  .wf-inactive & {
+    font-family: "P22Underground-Light";
+  }
+  font-weight: 300;
+  color: nth($tertiary, 5);
+
+  font-size: 2em;
+
+  .small & {
+    font-size: 1.45em;
+  }
+
+  // width: 90%;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: right;
+  // margin: 0 auto;
+
+
+
+  border-right: 5px solid nth($secondary, 3);
+
+  .quote & b {
+    color: nth($black, 6);
+    font-size: 1em / golden-ratio();
+    .wf-inactive & {
+      font-family: "P22Underground-Thin";
+    }
+    font-weight: 100;
+  }
+}
+
+ul.fragments,
+ol.fragments {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: golden-ratio() * .5em;
+  font-size: 1.25em;
+
+  &.small {
+    font-size: 1em;
+  }
+
+  li {
+    margin-bottom: golden-ratio() * .25em;
+  }
+}
+
+.the-web .reveal .controls div.navigate-left {
+  border-right-color: nth($black, 1);
+}
+
+.the-web .reveal .controls div.navigate-right {
+  border-left-color: nth($black, 1);
+}
+
+.the-web .reveal .controls div.navigate-up {
+  border-bottom-color: nth($black, 1);
+}
+
+.the-web .reveal .controls div.navigate-down {
+  border-top-color: nth($black, 1);
+}
+
+
+#responsive-grids,
+#intrinsic-ratios-css {
+  pre {
+    font-size: .75em;
+    line-height: 1em;
+  }
+}
+
+
+#pagecounter {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+
+  z-index: 100;
+
+  font-size: .75em;
+
+  .the-web & {
+    color: nth($black, 1);
+  }
+}
+
+// RWD Summit
+// pre .token {
+//   font-weight: bold !important;
+// }
+
+.zeldman {
+  b:after {
+    position: absolute;
+    content: '';
+    width: image-width('bbd.png') / 8;
+    height: image-height('bbd.png') / 8;
+    background-image: image-url('bbd.png');
+    background-size: 100%;
+    bottom: 1.4em;
+    right: 7em;
+    @include rotate(20deg);
+  }
+}
+
+.not-container {
+  width: 60%;
+  margin: 0 auto;
+  @include clearfix;
+
+  img {
+    width: 42.5%;
+    height: auto;
+  }
+  img:nth-of-type(odd) {
+    float: left;
+  }
+  img:nth-of-type(even) {
+    float: right;
+  }
+}
+
+#html5 {
+  img {
+    width: 10em;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  div img {
+    width: 1.5em;
+    margin: 0 .5em;
+    height: auto;
+  }
+
+  // img {
+  //   width: 3em;
+  //   height: auto;
+
+  //   $items: 8;
+  //   $arc: 360;
+  //   $angle: $arc / $items;
+  //   $radius: 70;
+
+  //   $startX: 0;
+  //   $startY: 0;
+
+  //   &:nth-of-type(1) {
+  //     @include transform(translate3d(0px, 0px,0px));
+  //   }
+
+
+
+  //   @for $i from 2 through 8 {
+  //     $x: 0;
+  //     $y: 0;
+
+  //     @if ($i < 3 or $i > 6) {
+  //       $x: $startX + (1/2 * $radius * sqrt(2));
+  //     }
+  //     @else {
+  //       $x: $startX - (1/2 * $radius * sqrt(2));
+  //     }
+
+  //     @if ($i < 5)  {
+  //       $y: $startY - ($radius - $x);
+  //     }
+  //     @else {
+  //       $y: $startY + ($radius - $x);
+  //     }
+
+  //     @debug $x;
+  //     @debug $y;
+  //     @debug 'New';
+
+
+  //     &:nth-of-type(#{$i}) {
+  //       @include transform(translate3d($x+px, $y+px,0px));
+  //     }
+
+  //     $startX: $x;
+  //     $startY: $y;
+  //   }
+
+
+  // }
+}
+
+strong.lowercase {
+  text-transform: none;
+  font-size: 1.25em;
+}
+
+@import 'singularitygs';
+@import 'singularity-extras';
+
+#html-style-tile-responsive {
+  $style-grid: ratio(golden(), 4);
+  @for $i from 1 through 4 {
+    img:nth-of-type(#{$i}) {
+      @include grid-span(1, $i, $style-grid, 1/3);
+    }
+  }
+}
