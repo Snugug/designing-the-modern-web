@@ -268,3 +268,15 @@ h2, h3, h4, h5, h6 {
   text-transform: inherit;
   font-variant: small-caps;
 }
+
+%state-image-full {
+  background-position: center;
+  background-size: cover;
+}
+
+.state-background {
+  .pizza & {
+    @extend %state-image-full;
+    background-image: inline-image('pizza.jpg');
+  }
+}
