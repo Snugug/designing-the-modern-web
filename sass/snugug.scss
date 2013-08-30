@@ -43,9 +43,7 @@ blockquote {
 
   font-size: 2em;
 
-  .small & {
-    font-size: 1.45em;
-  }
+  font-size: 1.45em;
 
   // width: 90%;
   padding-left: 1em;
@@ -62,6 +60,8 @@ blockquote {
   .quote & b {
     color: nth($black, 6);
     font-size: 1em / golden-ratio();
+    margin-top: 1em;
+    display: block;
     .wf-inactive & {
       font-family: "P22Underground-Thin";
     }
@@ -244,4 +244,27 @@ strong.lowercase {
       @include grid-span(1, $i, $style-grid, 1/3);
     }
   }
+}
+
+p {
+  padding-bottom: 1.618em;
+}
+
+blockquote p {
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+h5 ~ blockquote {
+  margin-top: 1.618em;
+}
+
+blockquote ~ blockquote {
+  margin-top: 1.618em;
+}
+
+h2, h3, h4, h5, h6 {
+  text-transform: inherit;
+  font-variant: small-caps;
 }
