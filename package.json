@@ -1,5 +1,5 @@
 {
-  "name": "Responsive Web Design Training",
+  "name": "Responsive-Web-Design-Training",
   "version": "0.0.0",
   "description": "Training on Responsive Web Design",
   "repository": {
@@ -36,5 +36,10 @@
     "grunt-bump": "0.0.6",
     "underscore": "~1.5.1",
     "underscore.string": "~2.3.3"
+  },
+  "dependencies": {
+    "express": "~3.4.0",
+    "socket.io": "~0.9.16",
+    "mustache": "~0.7.2"
   }
 }
