@@ -277,6 +277,11 @@ h2, h3, h4, h5, h6 {
 .state-background {
   .pizza & {
     @extend %state-image-full;
-    background-image: inline-image('pizza.jpg');
+    background-image: image-url('pizza.jpg');
+  }
+  .spoon & {
+    background-image: image-url('spoon.png');
+    background-position: bottom .5em right .5em;
+    background-repeat: no-repeat;
   }
 }
