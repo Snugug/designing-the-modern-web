@@ -22,7 +22,11 @@
           livereload: 8088
         },
         html: {
-          files: '**/*.html'
+          files: [
+            '**/*.html',
+            '!node_modules/**/*.html',
+            '!bower_components/**/*.html'
+          ]
         },
         // sass: {
         //   files: 'sass/**/*.scss',
