@@ -897,81 +897,287 @@
           </section>
           <section id="designing-outdoors">
             <h2>We're going outside to give mobile design on the go a go</h2>
+            <aside class="notes">
+              <p>1-1:30 hours</p>
+            </aside>
           </section>
         </section>
 
         <!-- Progressive Enhancement -->
         <section data-transition="zoom">
-          <section id="mobile">
-            <h1>Mobile</h1>
+          <section id="progressive-enhancement">
+            <h1>Progressive Enhancement</h1>
           </section>
         </section>
 
-<!--
-
-                <li>Stop thinking about mobile content, you're going to be wrong</li>
-                <li>Think about "what can this device do w/the content"</li>
-                  <li>Feature sniffing, not device sniffing</li>
-                  <li>Progressive Enhancement</li>
-
-
-                # Responsive is Default
-
-
-                <li>Have to start with your content</li>
-
-            </ul> -->
-
-
-
-
-
-					<!-- Mobile Usage Stats -->
-					<!-- Touch Always -->
-					<!-- Simple, descriptive interactions -->
-
-				<!-- Progressive Enhancement -->
-					<!-- Modernizr -->
-					<!-- Cross-Browser Differences -->
-
-<!-- 				<section id="web-is-not" class="quote">
-					<blockquote cite="https://twitter.com/globalmoxie/status/192279851732959232">
-						<p>The web is an inherently unstable medium</p>
-						<b>Ethan Marcotte</b>
-					</blockquote>
-				</section> -->
-
-          <!-- Responsive Web Design -->
-          <!-- Media Queries -->
-          <!-- Fluid Grids -->
-          <!-- Flexible Media -->
-
-        <section id="line-item" class="quote">
-          <blockquote cite="https://twitter.com/Snugug/status/387611186843631616">
-            <p>'Responsive' is Not a Line Item. It's Design.</p>
-            <b>Jason Pamental</b>
-          </blockquote>
+        <section>
+          <section class="quote" id="unstable-medium">
+            <blockquote cite="http://www.ripariandata.com/mail-room-blog/blog/an-event-apart-sf-recap-the-message-is-the-medium">
+              <p>The Web is an Inherently Unstable Medium</p>
+              <b>Ethan Marcotte</b>
+            </blockquote>
+            <aside class="notes">
+              <p>Let's Embrace the Entropy</p>
+            </aside>
+          </section>
+          <section id="take-away-what-we-cant-know" data-cite="Jason Pamental" data-source="https://twitter.com/Snugug/status/387607304843317248">
+            <p>Take away what we can't known</p>
+            <ul class="fragment roll-in">
+              <li>Screen size</li>
+              <li class="fragment roll-in">Device Capabilities</li>
+              <li class="fragment roll-in">Concurrent Activities</li>
+              <li class="fragment roll-in">Depth of Focus</li>
+              <li class="fragment roll-in">Purpose of Visit</li>
+            </ul>
+          </section>
+          <section id="make-believe" class="quote">
+            <blockquote cite="https://twitter.com/Snugug/status/387607304843317248">
+              <p>Take away the make believe. Take away what we can't know. They're fantasies.</p>
+              <b>Jason Pamental</b>
+            </blockquote>
+          </section>
+          <section id="the-unstable-web">
+            <p>There is no mobile web, no desktop web. There is only the web</p>
+            <p class="fragment">But the web is different things to different browsers</p>
+            <p class="fragment">Don't think about "mobile content", think "what can this device do with the content</p>
+          </section>
+          <section id="device-detection">
+            <img src="images/zoidberg.jpg" alt="Device Detection is Bad">
+          </section>
+          <section id="no-device-detection">
+            <p>Do not work in device silos or try and categorize devices, it's meaningless</p>
+            <p class="fragment">Each browser version on each device behaves differently, with more being released monthly. Attempting to categorize them all or target them individually is a fool's errand.</p>
+            <p class="fragment">Instead, care about determining what features are available and enhance the experience based on those features</p>
+          </section>
+          <section id="feature-detection">
+            <p>Start with a baseline experience</p>
+            <p class="fragment">Enhance the experience when a user's browser/device pair is capable</p>
+            <p class="fragment">Check to see how capable a browser/device pair is using feature detection</p>
+            <p class="fragment">Ensure your content is available without enhancements</p>
+          </section>
+          <section id="pixel-perfect">
+            <p>Throw away the phrase "Pixel Perfect"</p>
+            <h3 class="fragment">Your site will look different across browsers</h3>
+          </section>
         </section>
 
-        <section id="make-believe" data-cite="Jason Pamental" data-source="https://twitter.com/Snugug/status/387607304843317248">
-          <h2>Take Away What We Can't Know</h2>
-          <ul class="fragment roll-in">
-            <li>Screen size</li>
-            <li class="fragment roll-in">Device Capabilities</li>
-            <li class="fragment roll-in">Concurrent Activities</li>
-            <li class="fragment roll-in">Depth of Focus</li>
-            <li class="fragment roll-in">Purpose of Visit</li>
-          </ul>
-          <aside class="notes">
-            <p>take away the make believe. Take away what we can't know. They're fantasies.</p>
-          </aside>
+        <!-- Responsive Web Design -->
+        <section data-transition="zoom">
+          <section id="responsive-web-design">
+            <h1>Responsive Web Design</h1>
+          </section>
         </section>
 
-				<section id="thank-you">
-					<h1>Thank You</h1>
-					<p>Slides available at</p>
-					<p><strong class="lowercase">http://snugug.github.io/designing-the-modern-web/</strong></p>
-				</section>
+        <section>
+          <section id="line-item" class="quote">
+            <blockquote cite="https://twitter.com/Snugug/status/387611186843631616">
+              <p>'Responsive' is Not a Line Item. It's Design.</p>
+              <b>Jason Pamental</b>
+            </blockquote>
+          </section>
+
+          <section id="rwd-needs">
+            <h2>What Do You Need for RWD?</h2>
+            <p>As outlined in Ethan Marcotte's <a href="http://www.alistapart.com/articles/responsive-web-design/">Phrase-Coining A List Apart article</a>, Responsive Web Design needs the three following things:</p>
+            <ul class="fragments roll-in">
+              <li>Media Queries</li>
+              <li class="fragment roll-in">Fluid Grids</li>
+              <li class="fragment roll-in">Flexible Media</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section id="media-queries">
+            <h2>Media Queries</h2>
+          </section>
+          <section id="whats-in-a-query">
+            <p>Media queries are a CSS3 feature allowing styling changes based on viewport based conditions</p>
+            <p class="fragment">They are the key for tweaking our designs as they stop looking good</p>
+            <p class="fragment">They tend to be abbreviated as breakpoints or tweakpoints</p>
+          </section>
+          <section class="quote" id="small-screen-first">
+            <blockquote cite="http://bradfrostweb.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/">
+              <p>Start with the small screen first, then expand until it looks like shit.</p>
+              <p>TIME FOR A BREAKPOINT!</p>
+              <b>Stephen Hay</b>
+            </blockquote>
+          </section>
+          <section id="best-mqs">
+            <p>The best responsive sites will have many small tweakpoints to slightly alter a component's appearance</p>
+            <p class="fragment">Fewer and farther between are breakpoints that make large appearance changes to the whole site</p>
+            <p class="fragment">Usually you'll have between 20 and 50 media queries in a project</p>
+          </section>
+          <section id="bad-mqs">
+            <h2>If You Find You Only Have 3-4 Media Queries, You've Probably Done It Wrong</h2>
+          </section>
+          <section id="design-in-browser">
+            <p>In order to effectively create responsive sites, design really needs to be done in browser</p>
+            <p class="fragment">It is impractical to create Photoshop files for each and every variation in a component and layout</p>
+            <p class="fragment">Photoshop can be used as a sketch tool, but it cannot be used to make final design decisions</p>
+          </section>
+        </section>
+
+        <section>
+          <section id="fluid-grids">
+            <h2>Fluid Grids</h2>
+          </section>
+          <section id="why-a-grid">
+            <p>Why A Grid?</p>
+            <p class="fragment">Grids enforce proportion and constraint on your design</p>
+            <p class="fragment">They provide order and structure to your information.</p>
+            <p class="fragment">The best grid is specific to your content and your design, as it is an extension of both.</p>
+          </section>
+          <section id="print-grid">
+            <p>Print Grids Are Easy</p>
+            <ul>
+              <li class="fragment">Fixed display size</li>
+              <li class="fragment">Fixed content size</li>
+              <li class="fragment">One reading mode</li>
+              <li class="fragment">Limited additional user distraction</li>
+            </ul>
+          </section>
+          <section id="web-grid">
+            <p>Web Grids Are Hard</p>
+            <ul>
+              <li class="fragment">Many and varied display sizes</li>
+              <li class="fragment">Variable content lengths, sizes, and types</li>
+              <li class="fragment">Numerous reading modes</li>
+              <li class="fragment">Wide potential range of additional user distractions</li>
+            </ul>
+          </section>
+          <section id="not-the-same">
+            <h2>We Cannot Think About Web Grids And Print Grids The Same Way</h2>
+          </section>
+          <section id="wont-fly">
+            <h2>This Crap Doesn't Fly Anymore</h2>
+          </section>
+          <section id="honnecourt-grid" data-source="http://canarymason.github.io/managing-rwd-presentation/#/web-grids" data-cite="Mason Wendell">
+            <h2>Villard De Honnecourt, 13th Century</h2>
+            <img src="images/honnecourt.png" alt="Honnecourt Grid" class="left">
+            <img src="images/honnecourt-800.png" alt="Honnecourt Grid - 800 Years Ago" class="right">
+          </section>
+          <section id="honnecourt-today" data-source="http://canarymason.github.io/managing-rwd-presentation/#/web-grids" data-cite="Mason Wendell">
+            <h2>Villard De Honnecourt, Today</h2>
+            <img src="images/honnecourt-use.png" alt="Honnecourt Grid Today">
+          </section>
+          <section id="print-only">
+            <h2>One Grid For One Context Doesn't Exist On The Web</h2>
+            <aside class="notes">
+              <p>Instead, let's make grid specific to our content</p>
+            </aside>
+          </section>
+          <section id="types-of-grids">
+            <p>There are two types of grids:</p>
+            <ul class="fragment roll-in">
+              <li><strong class="small">Symmetric Grids:</strong> Each column is the same size</li>
+              <li class="fragment roll-in"><strong class="small">Asymmetric Grids:</strong> Columns are different sizes</li>
+            </ul>
+          </section>
+          <section id="symmetric-grids">
+            <h2>Symmetric grids are boring and don't help us enhance our content</h2>
+          </section>
+          <section id="twelve-column-symmetric-grid">
+            <img class="" src="images/symmetric-grid-foundation.png" alt="Symmetric Grid">
+          </section>
+          <section id="asymmetric-grids">
+            <h2>Asymmetric grids are more interesting, providing new constraints to help us enhance our content</h2>
+          </section>
+          <section id="custom-asymmetric-grid">
+            <p><strong>custom asymmetric grid</strong> <br> column sizes chosen by design needs</p>
+            <img class="fragment medium" src="images/asymmetric-grid-custom.png" alt="Custom Asymmetric Grid">
+          </section>
+          <section id="compound-asymmetric-grid">
+            <p><strong>compound asymmetric grid</strong> <br> columns calculated by overlaying two symmetric grids</p>
+            <img class="fragment medium" src="images/asymmetric-grid-compound.png" alt="compound Asymmetric Grid">
+          </section>
+          <section id="ratio-asymmetric-grid">
+            <p><strong>ratio asymmetric grid</strong> <br> columns calculated based on specific ratio</p>
+            <img class="fragment medium" src="images/asymmetric-grid-ratio.png" alt="ratio Asymmetric Grid">
+          </section>
+          <section id="spiral-asymmetric-grid">
+            <p><strong>spiral asymmetric grid</strong> <br> calculated based on intersections of a spiral</p>
+            <img class="fragment medium" src="images/asymmetric-grid-spiral.png" alt="spiral Asymmetric Grid">
+          </section>
+          <section id="responsive-grids">
+            <p>Your grid does not need to stay the same throughout the whole spectrum of your design</p>
+            <p class="fragment">As design needs change, so can the grid. But don't deviate from a grid once chosen</p>
+          </section>
+        </section>
+
+        <section>
+          <section id="flexible-media">
+            <h2>Flexible Media</h2>
+          </section>
+          <section id="define-flexible">
+            <p>Flexible media means two things:</p>
+            <ul class="fragment roll-in">
+              <li>Media that fluidly fills the space it occupies</li>
+              <li class="fragment roll-in">Alternate forms of the same media</li>
+            </ul>
+          </section>
+          <section id="fluid-media">
+            <p>Fluid media is fairly easy to do entirely in CSS</p>
+            <ul class="fragment roll-in">
+              <li>In CSS: <pre><code class="language-scss">img, video { max-width: 100%; height: auto;}</code></pre></li>
+              <li class="fragment roll-in"><a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">Intrinsic Ratios</a> for embedded media</li>
+            </ul>
+          </section>
+          <section id="alternate-media">
+            <p>Alternate media is much harder</p>
+            <ul class="fragment roll-in">
+              <li>No standard for responsive images <ul class="fragment roll-in">
+                <li>Editorially controlled content</li>
+                <li class="fragment roll-in">Based on image's size needs</li>
+                <li class="fragment roll-in">Still feels fast</li>
+              </ul></li>
+              <li class="fragment roll-in">Audio and video are hard <ul class="fragment roll-in">
+                <li>Different format support across browsers</li>
+                <li class="fragment roll-in">Cannot rely upon plugins being available</li>
+                <li class="fragment roll-in">No rights management</li>
+              </ul></li>
+            </ul>
+          </section>
+          <section id="all-content">
+            <p>Still, all content must be available across all browsers and devices</p>
+            <p class="fragment">Alternate media is where a well defined Content Strategy really shines</p>
+            <p class="fragment">Makes it easy to provide alternatives when needed by the presentation</p>
+          </section>
+        </section>
+
+        <section>
+          <section id="dont-despair">
+            <h2>Don't Despair!</h2>
+          </section>
+          <section id="more-trainings">
+            <p>While the implementation of media queries, fluid grids, and flexible and alternative media is hard, lots of smart people have figured most of it out</p>
+            <p class="fragment">The next set of trainings will help you learn how to implement a responsive site!</p>
+          </section>
+        </section>
+
+        <!-- Mobile Fieldtrip -->
+        <section data-transition="concave">
+          <section id="the-whole-pie">
+            <h1>The Whole Pie</h1>
+          </section>
+          <section id="stick-a-fork-in">
+            <h2>Let's put the whole pie in the oven!</h2>
+            <p class="fragment">Knowing what you do now, redesign your site</p>
+            <aside class="notes">
+              <p>1-1:30 hours</p>
+            </aside>
+          </section>
+        </section>
+
+
+        <section data-transition="zoom">
+          <section id="thank-you">
+            <h1>Thank You</h1>
+            <p>Slides available at</p>
+            <p><strong class="lowercase">http://snugug.github.io/designing-the-modern-web/</strong></p>
+          </section>
+        </section>
+
 
 
 			</div>
