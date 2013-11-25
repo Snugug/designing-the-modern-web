@@ -1,0 +1,19 @@
+{
+  "name": "training-responsive-web-design",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Snugug/training-responsive-web-design",
+  "authors": [
+    "Sam Richard <snugug@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
